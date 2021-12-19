@@ -1,0 +1,160 @@
+//  #242333, #FFFFFF, #01B0D3
+// #242333 - black
+// #FFFFFF - white
+// #01B0D3 - cyan
+@font-face {
+    font-family: 'PixeBoy';
+    src: url(../font/Pixeboy-z8XGD.ttf);
+}
+
+$background-color: hsl(244, 19%, 17%);
+$board-color: hsla(242, 13%, 40%, 0.329);
+$text-color: hsl(0, 0%, 100%);
+$btn-color: hsl(190, 99%, 42%);
+$info-color: hsla(244, 20%, 17%, 0.9);
+
+body {
+    font-family: 'PixeBoy';
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 5em 0em 5em 0em;
+    // justify-content: space-around;
+    // max-width: 70em;
+    margin: 0 auto;
+}
+
+.stageOne{
+    background-color: $background-color;
+}
+h1 {
+    // text-align: center;
+    color: $text-color;
+    font-size: 5rem;
+}
+#header {
+    height: 7vh;
+}
+
+
+#main {
+    // background-color: $background-color;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.stageThree {
+    color: $text-color;
+    font-size: 1.2rem;
+    height: 3vh;
+    background-color:$info-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+a {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $btn-color;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    border: 25px solid $btn-color;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: stretch;
+    // align-content: center;
+  }
+.item {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin: 0px;
+    padding: 0px;
+    // background-color: $text-color;
+    // width: calc((500 / 16)px); //25
+    // width: calc((500px / 16) - 2px); // +
+    // height: calc((500px / 16) - 2px); // + 
+    // height: calc((500 / 16)px); //25
+    border: 1px solid #9191912a;
+    &:hover {
+        background-color: $info-color;
+    }
+}
+
+select {
+    text-align: center;
+    font-family: "PixeBoy";
+    width: 10rem;
+    border: 3px solid $btn-color;
+    border-radius: 5px;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: 2.5rem;
+    color: $btn-color;
+    background-color: $background-color;
+    &:hover {
+        background-color: $text-color;
+    }
+}
+
+// 
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.color {
+    width: 10rem;
+
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // border: 3px solid $btn-color;
+    font-size: 1.5rem;
+    color: $btn-color;
+    background-color: $background-color;
+    // padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem 1rem 1rem 0rem;
+    
+}
+span{
+    font-size: 2rem;
+    margin-left: 0.75rem;
+}
+input {
+    border: 3px solid $btn-color;
+    border-radius: 5px;
+}
+button {
+    font-family: "PixeBoy";
+    width: 10rem;
+    border: 3px solid $btn-color;
+    border-radius: 5px;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 2.5rem;
+    color: $btn-color;
+    background-color: $background-color;
+    &:hover {
+        background-color: $text-color;
+    }
+}

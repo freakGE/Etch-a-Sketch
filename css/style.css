@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "PixeBoy";
+  src: url(../font/Pixeboy-z8XGD.ttf);
+}
+body {
+  font-family: "PixeBoy";
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.stageOne {
+  background-color: #242334;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+#header {
+  height: 7vh;
+}
+
+#main {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.stageThree {
+  color: white;
+  font-size: 1.2rem;
+  height: 3vh;
+  background-color: rgba(36, 35, 52, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #01b2d5;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  border: 25px solid #01b2d5;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: inline-block;
+  flex: 0 0 auto;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #9191912a;
+}
+.item:hover {
+  background-color: rgba(36, 35, 52, 0.9);
+}
+
+select {
+  text-align: center;
+  font-family: "PixeBoy";
+  width: 10rem;
+  border: 3px solid #01b2d5;
+  border-radius: 5px;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
+  font-size: 2.5rem;
+  color: #01b2d5;
+  background-color: #242334;
+}
+select:hover {
+  background-color: white;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.color {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #01b2d5;
+  background-color: #242334;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+span {
+  font-size: 2rem;
+  margin-left: 0.75rem;
+}
+
+input {
+  border: 3px solid #01b2d5;
+  border-radius: 5px;
+}
+
+button {
+  font-family: "PixeBoy";
+  width: 10rem;
+  border: 3px solid #01b2d5;
+  border-radius: 5px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem 0rem 1rem 0rem;
+  font-size: 2.5rem;
+  color: #01b2d5;
+  background-color: #242334;
+}
+button:hover {
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
