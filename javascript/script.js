@@ -5,7 +5,7 @@ let boardColor = '#ffffff';
 let btnColor = 'hsl(190, 99%, 42%)';
 
 
-let items = document.querySelectorAll('.item');
+// let items = document.querySelectorAll('.item');
 let clear = document.querySelector('.clear');
 let main = document.querySelector("#main");
 let pColor = document.querySelector('.pColor');
@@ -105,6 +105,7 @@ for (let i = 0; i < (divInRow * divInRow); i++){
 clear.addEventListener('click', clearTable);
 
 function clearTable(){
+    let items = document.querySelectorAll('.item');
     items.forEach((item) => {
         // let item = document.createElement('div');
         item.style.backgroundColor = "rgb(255, 255, 255)";
