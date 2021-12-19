@@ -71,13 +71,12 @@ size.addEventListener('change', function() {
         divInRow = 100;
     }
     removeAllChildNodes(container);
+    itemCounter = 0;
     iWidth = cWidth / divInRow;
     iHeight = cHeight / divInRow;
     for (let i = 0; i < (divInRow * divInRow); i++){
         space(); 
     }
-    
-
 })
 
 
@@ -89,6 +88,8 @@ function space(){
     item.style.height = `${(iHeight) - 2}px`;
     // item.style.border = '1px solid #9191912a';
     item.addEventListener('click', colorChanger);
+    item.addEventListener('mouseover', colorChanger);
+    item.addEventListener('mouseout', colorChanger);
 
     item.classList.add("item");    
     item.classList.add(`itemNumber${itemCounter}`);
@@ -105,6 +106,7 @@ clear.addEventListener('click', clearTable);
 
 function clearTable(){
     items.forEach((item) => {
+        // let item = document.createElement('div');
         item.style.backgroundColor = "rgb(255, 255, 255)";
     })
 }
