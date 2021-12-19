@@ -71,6 +71,9 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     color: $btn-color;
+    &:hover {
+        transition: 250ms linear;
+    }
 }
 
 .container {
@@ -112,6 +115,7 @@ select {
     background-color: $background-color;
     &:hover {
         background-color: $text-color;
+        transition: 250ms linear;
     }
 }
 
@@ -126,14 +130,15 @@ select {
     width: 10rem;
 
     display: flex;
-    // justify-content: center;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
     // border: 3px solid $btn-color;
     font-size: 1.5rem;
     color: $btn-color;
     background-color: $background-color;
     // padding: 1rem 2rem 1rem 2rem;
-    margin: 1rem 1rem 1rem 0rem;
+    margin: 1rem 1rem 1rem 1rem;
     
 }
 span{
@@ -143,6 +148,7 @@ span{
 input {
     border: 3px solid $btn-color;
     border-radius: 5px;
+    
 }
 button {
     font-family: "PixeBoy";
@@ -156,5 +162,28 @@ button {
     background-color: $background-color;
     &:hover {
         background-color: $text-color;
+        transition: 250ms linear;
     }
 }
+
+// .colorPicker{
+//     // padding: .5rem 0rem .5rem 0rem;
+//     margin: .3rem 0rem .3rem 0rem;
+//     text-align: center;
+// }
+// .btnColor {
+//     padding: .5rem 0rem .5rem 0rem;
+//     margin: .3rem 0rem .3rem 0rem;
+//     text-align: center;
+//     font-size: 1.5rem;
+//     width: 10rem;
+// }
+// .letterR{
+//     color: red;
+// }
+// .letterG {
+//     color: green;
+// }
+// .letterB{
+//     color: $btn-color;
+// }

@@ -57,6 +57,9 @@ a {
   text-decoration: none;
   color: #01b2d5;
 }
+a:hover {
+  transition: 250ms linear;
+}
 
 .container {
   padding: 0;
@@ -92,6 +95,7 @@ select {
 }
 select:hover {
   background-color: white;
+  transition: 250ms linear;
 }
 
 #menu {
@@ -103,11 +107,13 @@ select:hover {
 .color {
   width: 10rem;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   font-size: 1.5rem;
   color: #01b2d5;
   background-color: #242334;
-  margin: 1rem 1rem 1rem 0rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 span {
@@ -133,4 +139,5 @@ button {
 }
 button:hover {
   background-color: white;
+  transition: 250ms linear;
 }/*# sourceMappingURL=style.css.map */
