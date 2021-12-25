@@ -1,9 +1,10 @@
 @font-face {
-  font-family: "PixeBoy";
+  font-family: 'PixeBoy';
   src: url(../font/Pixeboy-z8XGD.ttf);
 }
+
 body {
-  font-family: "PixeBoy";
+  font-family: 'PixeBoy';
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -11,9 +12,16 @@ body {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
@@ -33,31 +41,50 @@ h1 {
 #main {
   width: 100vw;
   height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .stageThree {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   height: 3vh;
   background-color: rgba(36, 35, 52, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 a {
-  font-size: 1.75rem;
+  font-size: 1.19rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #01b2d5;
 }
+
 a:hover {
+  -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
 
@@ -66,17 +93,23 @@ a:hover {
   margin: 0;
   border: 25px solid #01b2d5;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .item {
   display: inline-block;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   margin: 0px;
   padding: 0px;
   border: 1px solid #9191912a;
 }
+
 .item:hover {
   background-color: rgba(36, 35, 52, 0.9);
 }
@@ -93,23 +126,40 @@ select {
   color: #01b2d5;
   background-color: #242334;
 }
+
 select:hover {
   background-color: white;
+  -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
 
 #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .color {
   width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5rem;
   color: #01b2d5;
   background-color: #242334;
@@ -137,7 +187,10 @@ button {
   color: #01b2d5;
   background-color: #242334;
 }
+
 button:hover {
   background-color: white;
+  -webkit-transition: 250ms linear;
   transition: 250ms linear;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
